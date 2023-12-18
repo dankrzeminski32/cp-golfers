@@ -41,11 +41,11 @@ export default function HeroIntro() {
           </List>
 
           <Group mt={30}>
-            <Button radius="xl" size="md" className={classes.control}>
-              Get started
+            <Button component="a" href={`/login`} radius="xl" size="md" className={classes.control}>
+              Login
             </Button>
-            <Button variant="default" radius="xl" size="md" className={classes.control}>
-                            <a href={`/register`}>Source Code</a>
+            <Button component="a" href={`/register`} variant="default" radius="xl" size="md" className={classes.control}>
+              Register
             </Button>
           </Group>
         </div>

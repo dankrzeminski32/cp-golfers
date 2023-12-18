@@ -1,16 +1,12 @@
-import './App.css'
 import '@mantine/core/styles.css';
-import HeroIntro from './components/HeroIntro/HeroIntro.jsx'
-
 import { MantineProvider } from '@mantine/core';
+import { Router } from './Router';
+import { theme } from './theme';
 
-
-function App() {
+export default function App() {
   return (
-    <MantineProvider>
-      <HeroIntro></HeroIntro>
+    <MantineProvider theme={theme}>
+      <Router />
     </MantineProvider>
-  )
+  );
 }
-
-export default App
